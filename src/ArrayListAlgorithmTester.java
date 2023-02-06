@@ -3,14 +3,24 @@ import java.util.ArrayList;
 
 public class ArrayListAlgorithmTester {
     public static void main(String[] args) {
-        ArrayList<Integer> intList11 = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7));
-        ArrayListAlgorithms.removeOdds(intList11);
-        System.out.println(intList11);
-        ArrayList<Integer> intList12 = new ArrayList<Integer>(Arrays.asList(2, 4, 6, 8, 10));
-        ArrayListAlgorithms.removeOdds(intList12);
-        System.out.println(intList12);
-        ArrayList<Integer> intList13 = new ArrayList<Integer>(Arrays.asList(1, 3, 5, 7, 9));
-        ArrayListAlgorithms.removeOdds(intList13);
-        System.out.println(intList13);
+        int[] intList18 = {1, 2, 3, 2, 4, 5, 5, 6};
+        ArrayList<Integer> modes = ArrayListAlgorithms.modes(intList18);
+        System.out.println(modes);
+
+        int[] intList19 = {1, 2, 2, 3, 4, 5, 5, 6, 6, 7, 6};
+        ArrayList<Integer> modes2 = ArrayListAlgorithms.modes(intList19);
+        System.out.println(modes2);
+
+        int[] intList20 = {1, 2, 1, 2, 4, 1, 2, 4, 1, 1, 3};
+        ArrayList<Integer> modes3 = ArrayListAlgorithms.modes(intList20);
+        System.out.println(modes3);
+
+        int[] intList21 = {1, 2, 3, 4, 3, 2, 1, 4, 1, 2, 3};
+        ArrayList<Integer> modes4 = ArrayListAlgorithms.modes(intList21);
+        System.out.println(modes4);
+
+        int[] intList22 = {1, 2, 3, 4, 5, 6};
+        ArrayList<Integer> modes5 = ArrayListAlgorithms.modes(intList22);
+        System.out.println(modes5);
     }
 }
